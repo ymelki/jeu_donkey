@@ -2,10 +2,10 @@
  
 
 abstract class Personnage {
-    private int $musculation;
-    private int $lachete;
-    private int $endurance;
-    private int $sante;
+    protected int $musculation;
+    protected int $lachete;
+    protected int $endurance;
+    protected int $sante;
 
  
 

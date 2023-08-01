@@ -1,22 +1,22 @@
 <?php
 
 class Chevalier extends Heros {
-    private int $musculation=15;
-    private int $lachete=5;
-    private int $intelligence=8;
-    private int $epee=12;
-    private int $endurance=100;
-    private int $sante=100;
+    protected int $musculation=15;
+    protected int $lachete=5;
+    protected int $intelligence=8;
+    protected int $epee=12;
+    protected int $endurance=100;
+    protected int $sante=100;
 
 
-    public function giffle($monstre){
+    public function giffle(Monstre $monstre){
         $monstre->setSante(
             ($monstre->getSante())-8
         );
 
     }
  
-    public function coupspecial($monstre){
+    public function coupspecial(Monstre $monstre){
         $monstre->setSante(
             ($monstre->getSante())-15
         );

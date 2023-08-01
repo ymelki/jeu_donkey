@@ -1,21 +1,21 @@
 <?php
 
 class princesse extends Heros {
-    private int $musculation=6;
-    private int $lachete=2;
-    private int $intelligence=15;
-    private int $epee=6;
-    private int $endurance=120;
-    private int $sante=100;
+    protected int $musculation=6;
+    protected int $lachete=2;
+    protected int $intelligence=15;
+    protected int $epee=6;
+    protected int $endurance=120;
+    protected int $sante=100;
      
-    public function giffle($monstre){
+    public function giffle(Monstre $monstre){
         $monstre->setSante(
             ($monstre->getSante())-10
         );
 
     }
  
-    public function coupspecial($monstre){
+    public function coupspecial(Monstre $monstre){
         $monstre->setSante(
             ($monstre->getSante())-12
         );

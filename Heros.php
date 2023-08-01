@@ -1,13 +1,13 @@
 <?php
 
 abstract class Heros extends Personnage {
-    private int $intelligence;
-    private int $epee;
+    protected int $intelligence;
+    protected int $epee;
 
     
  
-    abstract public function coupspecial($monstre);
-    abstract public function giffle($monstre);
+    abstract public function coupspecial(Monstre $monstre);
+    abstract public function giffle(Monstre $monstre);
 
     
     /**

@@ -5,4 +5,14 @@ objet
 getter and setter
 methode qui utilise les getter et les setter
 heritage
-2 classe abstraite personnage et heros 
+2 classe abstraite personnage et heros
+A mettre en protected
+On peut etre en parametre des classes
+on a mis une classe abstraite en parametre monstre ou
+les heros
+si je veux afficher "attention un monstre arrive"
+je met un constructeur dans monstre
+l'interface on pourra faire pareil que ça :
+on a mis une classe abstraite en parametre monstre ou
+les heros
+
