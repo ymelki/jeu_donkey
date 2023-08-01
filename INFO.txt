@@ -4,3 +4,5 @@ initialisation
 objet
 getter and setter
 methode qui utilise les getter et les setter
+heritage
+2 classe abstraite personnage et heros 
