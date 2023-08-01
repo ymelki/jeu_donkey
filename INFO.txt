@@ -1,0 +1,6 @@
+class
+private
+initialisation
+objet
+getter and setter
+methode qui utilise les getter et les setter
