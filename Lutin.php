@@ -7,13 +7,21 @@ class Lutin extends Monstre {
     protected int $salete=15;
     protected int $endurance=100;
     protected int $sante=100;
+   
+    function sePresenter(){
+        parent::sePresenter();
+        echo "je suis un lutin :       
+        Ma salete : ".$this->salete
+        ;
+        
+    }
 
-    public function rugir($heros){
+    public function rugir(Heros $heros){
         $heros->setSante(
             ($heros->getSante())-10
         );
     }
-    public function coupdesalete($heros){
+    public function coupdesalete(Heros $heros){
         $heros->setSante(
             ($heros->getSante())-4
         );

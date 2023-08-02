@@ -1,10 +1,14 @@
 <?php
 
-abstract class Heros extends Personnage {
+abstract class Heros extends Personnage implements Iheros{
     protected int $intelligence;
     protected int $epee;
 
-    
+    public function __construct()
+    {
+        echo "Attention : un heros arrive !";
+        
+    }  
  
     abstract public function coupspecial(Monstre $monstre);
     abstract public function giffle(Monstre $monstre);

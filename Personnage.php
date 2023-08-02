@@ -7,7 +7,15 @@ abstract class Personnage {
     protected int $endurance;
     protected int $sante;
 
- 
+    function sePresenter(){
+        echo "je suis un personnage : 
+        
+        Ma lachete : ".$this->lachete.
+        "Ma musculation : ".$this->musculation.
+        "Ma endurance : ".$this->endurance.
+        "Ma sante : ".$this->sante
+        ;
+    }
 
     /**
      * Get the value of musculation

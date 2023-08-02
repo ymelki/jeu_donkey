@@ -3,14 +3,25 @@
 abstract class Monstre extends Personnage{
     protected int $mechancete;
     
-    abstract public function rugir($heros);
-    abstract public function coupdesalete($heros);
+    abstract public function rugir(Heros $heros);
+    abstract public function coupdesalete(Heros $heros);
+
 
     public function __construct()
     {
         echo "Attention : un montre arrive !";
         
     }
+
+    function sePresenter(){
+        parent::sePresenter();
+        echo "je suis un monstre : 
+        
+        Ma mechancete : ".$this->mechancete
+        ;
+        
+    }
+
     /**
      * Get the value of mechancete
      */ 
